@@ -1,0 +1,49 @@
+#define ledpin  13
+#define ledpin2 12
+#define ledpin3 11
+#define ledpin4 10
+void setup()
+{
+pinMode(ledpin, OUTPUT);
+  pinMode(ledpin2, OUTPUT);
+  pinMode(ledpin3, OUTPUT);
+  pinMode(ledpin4, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(ledpin,LOW); //All Off
+  digitalWrite(ledpin2,LOW);
+  digitalWrite(ledpin3,LOW);
+  digitalWrite(ledpin4,LOW);
+  
+  	delay(250);
+  
+  digitalWrite(ledpin, LOW);
+    digitalWrite(ledpin2, LOW); 
+    digitalWrite(ledpin3, LOW);
+    digitalWrite(ledpin4, HIGH); //On Green
+  
+  delay(250);
+  
+    digitalWrite(ledpin, LOW);
+    digitalWrite(ledpin2, LOW); 
+    digitalWrite(ledpin3, HIGH); //On Red
+    digitalWrite(ledpin4, HIGH); //On Green
+  
+  delay(250);
+  
+  digitalWrite(ledpin, LOW);
+    digitalWrite(ledpin2, HIGH); //On sky blue
+    digitalWrite(ledpin3, HIGH); //On Red
+    digitalWrite(ledpin4, HIGH); //On Green
+  
+  delay(250);
+  
+  digitalWrite(ledpin, HIGH);//On Orange
+    digitalWrite(ledpin2, HIGH); //On Sky Blue
+    digitalWrite(ledpin3, HIGH); //On Red
+    digitalWrite(ledpin4, HIGH); //On Green
+  
+  delay(250);
+}//Reset ไปอันแรก
